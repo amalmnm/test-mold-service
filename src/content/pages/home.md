@@ -1,5 +1,5 @@
 ---
 title: Home
-heroTitle: Professional Mold Removal test
+heroTitle: Professional Mold Removal
 heroText: Professional mold removal services.
 ---
