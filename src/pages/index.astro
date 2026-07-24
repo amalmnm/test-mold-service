@@ -11,18 +11,27 @@ import Stats from "../components/sections/Stats.astro";
 import Testimonials from "../components/sections/Testimonials.astro";
 import LatestBlogs from "../components/sections/LatestBlogs.astro";
 import ContactUs from "../components/sections/ContactUs.astro";
+
+import { getEntry } from "astro:content";
+
+const home = await getEntry("pages", "home");
+
+if (!home) {
+  throw new Error("home.md not found");
+}
+
 ---
 
 <MainLayout title="Rapid Mold Service">
   
-  <Hero />
-   <Services />
+   <Hero data={home.data.hero} />
+   <Services  />
    <About/>
-    <WhyChoose />
-	<Process />
-	<Stats />
+    <WhyChoose  />
+	<Process  />
+	<Stats  />
 	<Testimonials />
-	<LatestBlogs />
+	<LatestBlogs  />
 	<ContactUs />
 	
 </MainLayout>

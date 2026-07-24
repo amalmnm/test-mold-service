@@ -1,3 +1,7 @@
+---
+const { data } = Astro.props;
+---
+
 <section class="relative">
 
   <img
@@ -17,15 +21,11 @@
       </p>
 
       <h1 class="text-6xl font-bold leading-tight">
-        Safe & Reliable Mold Inspection
-        <span class="text-blue-400">
-          and Remediation
-        </span>
+        {data.title}      
       </h1>
 
       <p class="mt-8 text-xl leading-8 text-gray-200">
-        We help homeowners and businesses detect, inspect,
-        test and remove mold safely with certified specialists.
+       {data.description}
       </p>
 
       <div class="mt-10 flex gap-5">
