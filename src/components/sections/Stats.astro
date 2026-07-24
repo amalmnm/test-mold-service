@@ -1,0 +1,44 @@
+---
+const stats = [
+  {
+    number: "15+",
+    title: "Years Experience",
+  },
+  {
+    number: "2,500+",
+    title: "Projects Completed",
+  },
+  {
+    number: "1,800+",
+    title: "Happy Clients",
+  },
+  {
+    number: "24/7",
+    title: "Emergency Service",
+  },
+];
+---
+
+<section class="bg-blue-700 py-20 text-white">
+  <div class="mx-auto max-w-7xl px-6">
+
+    <div class="grid gap-10 text-center md:grid-cols-2 lg:grid-cols-4">
+
+      {stats.map((item) => (
+        <div>
+
+          <h2 class="text-5xl font-bold">
+            {item.number}
+          </h2>
+
+          <p class="mt-3 text-lg">
+            {item.title}
+          </p>
+
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+</section>

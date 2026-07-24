@@ -1,0 +1,135 @@
+---
+const quickLinks = [
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Blog", href: "/blog" },
+  { name: "Contact", href: "/contact" },
+];
+
+const services = [
+  "Mold Inspection",
+  "Mold Testing",
+  "Mold Removal",
+  "Water Damage Restoration",
+  "Air Quality Testing",
+];
+---
+
+<footer class="bg-gray-900 text-gray-300">
+  <div class="mx-auto max-w-7xl px-6 py-16">
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+      
+      <!-- Company -->
+      <div>
+        <h3 class="text-2xl font-bold text-white">
+          Rapid Mold Service
+        </h3>
+
+        <p class="mt-4 leading-7 text-gray-400">
+          Providing professional mold inspection, testing, and remediation
+          services with fast response times and certified specialists.
+        </p>
+
+        <div class="mt-6 flex gap-4">
+          <a href="#" class="rounded-full bg-gray-800 p-3 hover:bg-green-600">
+            FB
+          </a>
+
+          <a href="#" class="rounded-full bg-gray-800 p-3 hover:bg-green-600">
+            IG
+          </a>
+
+          <a href="#" class="rounded-full bg-gray-800 p-3 hover:bg-green-600">
+            IN
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="mb-5 text-xl font-semibold text-white">
+          Quick Links
+        </h4>
+
+        <ul class="space-y-3">
+          {
+            quickLinks.map((item) => (
+              <li>
+                <a
+                  href={item.href}
+                  class="transition hover:text-green-400"
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h4 class="mb-5 text-xl font-semibold text-white">
+          Our Services
+        </h4>
+
+        <ul class="space-y-3">
+          {
+            services.map((service) => (
+              <li class="text-gray-400">
+                {service}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="mb-5 text-xl font-semibold text-white">
+          Contact Info
+        </h4>
+
+        <div class="space-y-4 text-gray-400">
+          <p>
+            📍 123 Main Street,<br />
+            Your City, State
+          </p>
+
+          <p>
+            📞 (555) 123-4567
+          </p>
+
+          <p>
+            ✉️ info@rapidmoldservice.com
+          </p>
+
+          <p>
+            🕒 24/7 Emergency Service
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="mt-12 border-t border-gray-800 pt-6">
+      <div class="flex flex-col items-center justify-between gap-4 text-sm text-gray-500 md:flex-row">
+        <p>
+          © 2026 Rapid Mold Service. All rights reserved.
+        </p>
+
+        <div class="flex gap-6">
+          <a href="/privacy-policy" class="hover:text-green-400">
+            Privacy Policy
+          </a>
+
+          <a href="/terms-of-service" class="hover:text-green-400">
+            Terms of Service
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

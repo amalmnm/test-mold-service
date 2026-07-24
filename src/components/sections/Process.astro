@@ -1,0 +1,70 @@
+---
+const steps = [
+  {
+    number: "01",
+    title: "Inspection",
+    description:
+      "Our certified technicians inspect your property to identify mold and moisture problems.",
+  },
+  {
+    number: "02",
+    title: "Testing",
+    description:
+      "Air and surface samples are collected and analyzed to determine the type of mold.",
+  },
+  {
+    number: "03",
+    title: "Remediation",
+    description:
+      "We safely remove mold, clean affected areas, and prevent future growth.",
+  },
+  {
+    number: "04",
+    title: "Final Verification",
+    description:
+      "A final inspection ensures your property is clean and safe before completion.",
+  },
+];
+---
+
+<section class="bg-gray-50 py-24">
+  <div class="mx-auto max-w-7xl px-6">
+
+    <div class="mb-16 text-center">
+      <p class="text-sm font-semibold uppercase tracking-[3px] text-blue-600">
+        Our Process
+      </p>
+
+      <h2 class="mt-4 text-4xl font-bold">
+        How We Work
+      </h2>
+
+      <p class="mx-auto mt-4 max-w-2xl text-gray-600">
+        Our step-by-step process ensures safe, effective, and long-lasting mold removal.
+      </p>
+    </div>
+
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+
+      {steps.map((step) => (
+        <div class="rounded-2xl bg-white p-8 shadow transition hover:-translate-y-2 hover:shadow-xl">
+
+          <span class="text-5xl font-bold text-blue-600">
+            {step.number}
+          </span>
+
+          <h3 class="mt-6 text-2xl font-semibold">
+            {step.title}
+          </h3>
+
+          <p class="mt-4 leading-7 text-gray-600">
+            {step.description}
+          </p>
+
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+</section>

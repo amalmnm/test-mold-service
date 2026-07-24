@@ -1,0 +1,66 @@
+---
+const testimonials = [
+  {
+    name: "John Smith",
+    company: "Homeowner",
+    review:
+      "Excellent service! The inspection was detailed and the remediation team was very professional.",
+  },
+  {
+    name: "Sarah Johnson",
+    company: "Business Owner",
+    review:
+      "Fast response and great communication throughout the entire project.",
+  },
+  {
+    name: "Michael Brown",
+    company: "Property Manager",
+    review:
+      "Highly recommend Rapid Mold Service. Everything was completed on time.",
+  },
+];
+---
+
+<section class="bg-white py-24">
+
+  <div class="mx-auto max-w-7xl px-6">
+
+    <div class="mb-14 text-center">
+
+      <p class="text-blue-600 font-semibold uppercase tracking-[3px]">
+        Testimonials
+      </p>
+
+      <h2 class="mt-4 text-4xl font-bold">
+        What Our Clients Say
+      </h2>
+
+    </div>
+
+    <div class="grid gap-8 lg:grid-cols-3">
+
+      {testimonials.map((item) => (
+
+        <div class="rounded-2xl border p-8 shadow-sm">
+
+          <p class="leading-8 text-gray-600">
+            "{item.review}"
+          </p>
+
+          <h3 class="mt-8 text-xl font-semibold">
+            {item.name}
+          </h3>
+
+          <p class="text-blue-600">
+            {item.company}
+          </p>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>

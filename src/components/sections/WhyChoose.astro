@@ -1,0 +1,42 @@
+---
+const items = [
+  "Certified Professionals",
+  "Advanced Mold Testing",
+  "Affordable Pricing",
+  "24/7 Emergency Service",
+  "Residential & Commercial",
+  "Customer Satisfaction",
+];
+---
+
+<section class="bg-slate-900 py-24 text-white">
+
+  <div class="mx-auto max-w-7xl px-6">
+
+    <div class="text-center">
+
+      <p class="uppercase tracking-[3px] text-blue-400">
+        Why Choose Us
+      </p>
+
+      <h2 class="mt-4 text-4xl font-bold">
+        Why Homeowners Trust Us
+      </h2>
+
+    </div>
+
+    <div class="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+      {items.map((item) => (
+        <div class="rounded-xl border border-slate-700 p-8">
+          <h3 class="text-2xl font-semibold">
+            ✓ {item}
+          </h3>
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
