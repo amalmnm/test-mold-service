@@ -7,3 +7,23 @@ content:
     label: Pages
     type: collection
     path: src/content/pages
+    fields:
+      - name: title
+        label: Title
+        type: text
+
+      - name: heroTitle
+        label: Hero Title
+        type: text
+
+      - name: heroText
+        label: Hero Text
+        type: textarea
+
+      - name: servicesTitle
+        label: Services Title
+        type: text
+
+      - name: servicesContent
+        label: Services Content
+        type: textarea
