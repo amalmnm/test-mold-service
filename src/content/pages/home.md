@@ -1,4 +1,7 @@
 ---
 title: Home
-heroTitle: Professional Mold Removal test
+
+hero:
+  title: Professional Mold Removal test
+  description: Professional mold removal and inspection services.
 ---
